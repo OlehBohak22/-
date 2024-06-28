@@ -113,7 +113,6 @@ header {
   position: sticky;
   top: 0;
   color: white;
-  padding: 15px 0;
   text-align: center;
   z-index: 1000;
   background-color: #ffffff;
@@ -730,8 +729,16 @@ header {
 }
 
 .first-swiper {
+  position: relative;
   width: 49vw;
   overflow: hidden;
+}
+
+.first-swiper-text-container {
+  position: absolute;
+  bottom: 0.4vw;
+  left: 0.4vw;
+  z-index: 9;
 }
 
 .second-swiper {
@@ -758,11 +765,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
 }
 
 .swiper-btn-icon-prev {
   width: 1.2vw;
   height: 1.2vw;
+  stroke: #132b29;
+  transition: 0.3s;
 }
 
 .next-swiper-btn {
@@ -774,13 +784,106 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
 }
 
 .swiper-btn-icon-next {
   width: 1.2vw;
   height: 1.2vw;
   transform: rotate(180deg);
+  stroke: #132b29;
+  transition: 0.3s;
 }
+
+.prev-swiper-btn:hover {
+  background-color: #132b29;
+  border-radius: 0;
+}
+
+.prev-swiper-btn:hover .swiper-btn-icon-prev {
+  stroke: #ffffff;
+}
+
+.next-swiper-btn:hover {
+  background-color: #132b29;
+  border-radius: 0;
+}
+
+.next-swiper-btn:hover .swiper-btn-icon-next {
+  stroke: #ffffff;
+}
+
+.first-swiper-text-container {
+  background-image: url(../images/rectangle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 48vw;
+  height: 48vw;
+  padding: 6vw;
+}
+
+.swiper-green-span {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 0.7vw;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #e1ff42;
+}
+
+.swiper-white-span {
+  color: #fff;
+}
+
+.swiper-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 3.75vw;
+  line-height: 4.2vw;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  width: 35vw;
+  margin-top: 10vw;
+}
+
+.ekaterina-font {
+}
+
+.swiper-title-green-text {
+}
+
+.swiper-text-btn {
+  margin: 0 auto;
+  margin-top: 2.3vw;
+}
+
+.hero-btn {
+}
+
+.default-btn-text {
+}
+
+.default-btn-icon {
+}
+
+.first-swiper-span {
+  position: absolute;
+  right: 5vw;
+}
+
+.second-swiper-span {
+  position: absolute;
+  left: 5vw;
+}
+
+.swiper-pagination {
+  background: #fff; /* Сірий колір фону */
+  fill: #302215;
+}
+
+
 
 /* YAMMY SECTION -----------------------------------------------------------------*/
 

@@ -5,7 +5,6 @@ const firstSwiper = new Swiper(".first-swiper", {
   fadeEffect: {
     crossFade: true,
   },
-  
 });
 
 const secondSwiper = new Swiper(".second-swiper", {
@@ -19,7 +18,12 @@ const secondSwiper = new Swiper(".second-swiper", {
   fadeEffect: {
     crossFade: true,
   },
-  
+
+  pagination: {
+    el: ".swiper-pagination",
+
+    type: "progressbar",
+  },
 });
 
 firstSwiper.controller.control = secondSwiper;
