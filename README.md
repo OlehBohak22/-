@@ -1,2 +1,2 @@
-# -
-steya
+# STEYA
+STEYA project
