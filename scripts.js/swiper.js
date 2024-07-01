@@ -22,9 +22,51 @@ const secondSwiper = new Swiper(".second-swiper", {
   pagination: {
     el: ".swiper-pagination",
 
-    type: "progressbar",
+    type: "bullets",
+    clickable: true,
   },
 });
 
 firstSwiper.controller.control = secondSwiper;
 secondSwiper.controller.control = firstSwiper;
+
+// BESTSELLER swiper
+
+new Swiper(".swiper", {
+  initialSlide: 0,
+  slidesPerView: 3,
+  spaceBetween: 0,
+  navigation: {
+    prevEl: ".swiper-btn-left",
+    nextEl: ".swiper-btn-right",
+  },
+  loop: true,
+});
+
+new Swiper(".bestseller-swiper", {
+  initialSlide: 0,
+  slidesPerView: 2,
+  spaceBetween: 0,
+  navigation: {
+    prevEl: ".swiper-btn-left",
+    nextEl: ".swiper-btn-right",
+  },
+  loop: true,
+
+  breakpoints: {
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+new Swiper(".yummy-swiper", {
+  initialSlide: 0,
+  slidesPerView: 4,
+  spaceBetween: 0,
+  navigation: {
+    prevEl: ".yummy-swiper-prev",
+    nextEl: ".yummy-swiper-next",
+  },
+  loop: true,
+});

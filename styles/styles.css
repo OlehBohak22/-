@@ -42,12 +42,14 @@ body {
 }
 
 .ekaterina-font {
-  font-family: "Ekaterina Velikaya One";
+  font-family: "Ekaterina Velikaya One", sans-serif;
   font-weight: 400;
   font-size: 7.8vw;
+  line-height: 0px;
+  line-height: 0;
+  letter-spacing: -0.07em;
   text-align: center;
   color: #e1ff42;
-  margin-top: 20px;
 }
 
 .container {
@@ -121,7 +123,7 @@ header {
 .header-line {
   position: absolute;
   width: 99vw;
-  height: 2px;
+  height: 0.1vw;
   background-color: #e6e6e0;
   left: 0;
 }
@@ -625,7 +627,7 @@ header {
 }
 
 .rating-value {
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 0.8vw;
   letter-spacing: -0.02em;
@@ -655,7 +657,7 @@ header {
 }
 
 .product-price {
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 0.9vw;
   color: #302215;
@@ -666,10 +668,6 @@ header {
   font-weight: 400;
   font-size: 0.9vw;
   color: #302215;
-}
-
-.bestseller-product-item:hover .besteseller-item-product-image {
-  transform: scale(1.2);
 }
 
 .product-item-basket-button {
@@ -702,6 +700,8 @@ header {
 .basket-icon {
   fill: #132b29;
   transition: 0.3s;
+  width: 0.5vw;
+  height: 0.5vw;
 }
 
 .bestseller-product-item:hover .product-item-basket-button {
@@ -718,6 +718,11 @@ header {
 
 .product-item-basket-button:hover .basket-icon {
   fill: #ffffff;
+}
+
+.bestseller-swiper {
+  overflow: hidden;
+  width: 80vw;
 }
 
 /* SWIPER  --------------------------------------------------------------------------------*/
@@ -879,15 +884,28 @@ header {
 }
 
 .swiper-pagination {
-  background: #fff; /* Сірий колір фону */
-  fill: #302215;
+  position: absolute;
+  top: 2vw !important;
 }
 
+.swiper-pagination-bullet {
+  background: #ffffff70;
 
+  opacity: 1;
+  width: 14vw;
+  height: 0.3vw;
+  border-radius: 1vw;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff;
+}
 
 /* YAMMY SECTION -----------------------------------------------------------------*/
 
 .yammy-section {
+  position: relative;
+
   padding: 5.2vw 0 6.25vw 0;
   height: 65vw;
   background-image: url(../images/yammy-pollen-bg.jpg);
@@ -935,6 +953,55 @@ header {
 
 .default-btn-in-yummy {
   margin: 0 auto;
+}
+
+.yummy-swiper {
+  overflow: hidden;
+  width: 80vw;
+}
+
+.yummy-swiper-prev {
+  position: absolute;
+  top: 45%;
+  left: 4vw;
+  z-index: 9;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 100%;
+  width: 3.1vw;
+  height: 3.1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.yummy-swiper-next {
+  position: absolute;
+  right: 4vw;
+  top: 45%;
+  z-index: 9;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 100%;
+  width: 3.1vw;
+  height: 3.1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.yummy-swiper-next:hover,
+.yummy-swiper-prev:hover {
+  border-radius: 0;
+  background-color: #132b29;
+}
+
+.yummy-swiper-next:hover .bestseller-swiper-icon-right {
+  stroke: #ffffff;
+}
+.yummy-swiper-prev:hover .bestseller-swiper-icon-left {
+  stroke: #ffffff;
 }
 
 /* SCRUB ------------------------------------------------------------------------------- */
@@ -2166,7 +2233,7 @@ footer {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #132b29;
-  border: 3px solid #132b29;
+  border: 0.1vw solid #132b29;
   border-radius: 11.3vw;
   padding: 1.1vw 3.2vw;
   transition: 0.2s;
@@ -2373,6 +2440,7 @@ footer {
 
 .bestseller-catalog-container {
   display: flex;
+  min-width: 0;
 }
 
 .bestseller-btn-container {
@@ -2409,6 +2477,18 @@ footer {
 
 .bestseller-swiper-catalog-section {
   padding-bottom: 7.2vw;
+}
+
+.bestseller-product-list {
+  justify-content: flex-start;
+}
+
+.bestseller-product-item {
+  width: 19.7vw !important;
+}
+
+.swiper {
+  width: 70vw;
 }
 
 /* NOVYNKI ----------------------------------------------------------------------- */
@@ -2778,4 +2858,254 @@ footer {
 
 .payment-section {
   padding-bottom: 5.6vw;
+}
+
+@media (max-width: 1024px) {
+  /* HERO SCTION =----------------------------------------------------------------- */
+
+  .container {
+    width: 90vw;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2.1vw;
+  }
+
+  .second-hero-container {
+    width: 91vw;
+    height: 59.2vw;
+    background-position: 0 -23vw;
+  }
+
+  .first-hero-container {
+    background-image: url(../images/hero-mob-bg.jpg);
+    width: 91vw;
+    height: 135.7vw;
+  }
+
+  .hero-title {
+    font-size: 10.6vw;
+    margin: 0 auto;
+    width: 62vw;
+    margin-top: 17vw;
+    margin-bottom: 10.4vw;
+  }
+
+  .hero-title-span {
+    font-size: 10.6vw;
+  }
+
+  .default-btn {
+    gap: 3.2vw;
+    padding: 5.8vw 7.4vw 6.4vw 9.6vw;
+  }
+
+  .hero-btn {
+    margin: 0 auto;
+  }
+
+  .default-btn-text {
+    font-size: 5.3vw;
+  }
+
+  .default-btn-icon {
+    width: 6.4vw;
+    height: 6.4vw;
+  }
+
+  /* BESTSELLERS SECTION  ------------------------------------------------------- */
+
+  .bestseller-section {
+    padding-top: 21.3vw;
+  }
+
+  .bestseller-swiper-btn {
+    display: none;
+  }
+
+  .bestseller-title {
+    font-size: 7.4vw;
+    margin-right: 2.6vw;
+    margin-bottom: 9.6vw;
+  }
+
+  .bestseller-title-number {
+    font-size: 4.2vw;
+  }
+
+  .product-marker {
+    padding: 3.6vw 2.9vw;
+    top: 3vw;
+  }
+
+  .product-marker-text {
+    font-size: 2.6vw;
+  }
+
+  .product-image-wrap {
+    width: 43.4vw;
+    margin-bottom: 5.6vw;
+  }
+
+  .bestseller-swiper .bestseller-product-item {
+    width: 43.7vw !important;
+  }
+
+  .bestseller-swiper {
+    width: 99.5%;
+  }
+
+  .rating-icon {
+    width: 21.3vw;
+    height: 4.2vw;
+    margin-right: 2.1vw;
+  }
+
+  .rating-value {
+    font-size: 3.2vw;
+  }
+
+  .product-type {
+    font-size: 3.2vw;
+    margin-bottom: 2.1vw;
+  }
+
+  .product-name {
+    font-size: 3.7vw;
+    width: fit-content;
+  }
+
+  .product-price {
+    font-size: 4.8vw;
+  }
+
+  .price-grivna {
+    font-size: 4.8vw;
+  }
+
+  .bestseller-version-like {
+    display: none;
+  }
+
+  .mob-bestseller-plus {
+    position: absolute;
+    z-index: 999;
+    right: 3vw;
+    bottom: -4vw;
+    width: 11.7vw;
+    height: 11.7vw;
+    border-radius: 100%;
+    background-color: #e1ff42;
+    border: none;
+    font-size: 6vw;
+  }
+
+  .product-image-wrap {
+    overflow: visible;
+  }
+
+  /* SWIPER section ----------------------------------------------------------- */
+
+  .swiper-section {
+    flex-direction: column;
+    gap: 2.1vw;
+  }
+
+  .first-swiper {
+    width: 91vw;
+  }
+
+  .first-swiper-text-container {
+    width: 88vw;
+    height: 89vw;
+    left: 1.4vw;
+  }
+
+  .swiper-title {
+    margin: 0 auto;
+    margin-top: 13vw;
+    margin-bottom: 10.6vw;
+    font-size: 6.9vw;
+    width: 64vw;
+    line-height: 8vw;
+  }
+
+  .ekaterina-font {
+    font-size: 14.4vw;
+    font-weight: 400;
+    line-height: 0px;
+    line-height: 0;
+    letter-spacing: -0.07em;
+    text-align: center;
+    color: #e1ff42;
+  }
+
+  .swiper-text-btn {
+    height: 12.8vw;
+    width: 47.2vw;
+  }
+
+  .swiper-text-btn .default-btn-text {
+    font-size: 3.7vw;
+    width: 42vw;
+  }
+
+  .second-swiper {
+    width: 91vw;
+  }
+
+  .swiper-green-span {
+    display: none;
+  }
+
+  .swiper-pagination-bullet {
+    width: 25.8vw;
+    height: 0.8vw;
+  }
+
+  .next-swiper-btn {
+    width: 16vw;
+    height: 16vw;
+  }
+
+  .prev-swiper-btn {
+    width: 16vw;
+    height: 16vw;
+  }
+
+  .swiper-btn-icon-prev {
+    width: 6.4vw;
+    height: 6.4vw;
+  }
+
+  .swiper-btn-icon-next {
+    width: 6.4vw;
+    height: 6.4vw;
+  }
+
+  .swiper-btns {
+    gap: 3.6vw;
+    left: 50vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .bestseller-product-item:hover .besteseller-item-product-image {
+    transform: scale(1.2);
+  }
 }
