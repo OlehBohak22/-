@@ -62,11 +62,17 @@ new Swiper(".bestseller-swiper", {
 
 new Swiper(".yummy-swiper", {
   initialSlide: 0,
-  slidesPerView: 4,
+  slidesPerView: 2,
   spaceBetween: 0,
   navigation: {
     prevEl: ".yummy-swiper-prev",
     nextEl: ".yummy-swiper-next",
   },
   loop: true,
+
+  breakpoints: {
+    1024: {
+      slidesPerView: 4,
+    },
+  },
 });

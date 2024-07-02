@@ -477,6 +477,7 @@ header {
 
 .bestseller-section {
   padding: 5.2vw 0 6.25vw 0;
+  padding-bottom: 21vw;
 }
 
 .bestseller-upper-menu {
@@ -1081,6 +1082,7 @@ header {
   flex-wrap: wrap;
   gap: 0.4vw;
   column-gap: 0.5vw;
+  justify-content: center;
 }
 
 .cosmetix-item {
@@ -3011,6 +3013,7 @@ footer {
   .swiper-section {
     flex-direction: column;
     gap: 2.1vw;
+    margin-bottom: 20vw;
   }
 
   .first-swiper {
@@ -3088,6 +3091,93 @@ footer {
   .swiper-btns {
     gap: 3.6vw;
     left: 50vw;
+  }
+
+  /* YUMMY SECTION ---------------------------------------------------------------- */
+
+  .yammy-section {
+    background-size: 99vw 34vw;
+    background-position: 0 22vw;
+    height: auto;
+  }
+
+  .yummy-swiper {
+    width: 91vw;
+  }
+
+  .yummy-swiper .bestseller-product-item {
+    width: 45.1vw !important;
+  }
+
+  .visually-hidden-for-mob {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .default-btn-in-yummy {
+    padding: 4.8vw 7.4vw 5.4vw 9.6vw;
+    margin-top: 9.6vw;
+  }
+
+  .yammy-title {
+    font-size: 7.4vw;
+    margin-right: 2.6vw;
+  }
+
+  .yammy-title-number {
+    font-size: 4.2vw;
+  }
+
+  .yammy-title-container {
+    margin-bottom: 16.7vw;
+  }
+
+  /* SCRUB section --------------------------------------------------------- */
+
+  .scrub-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2.1vw;
+    padding-top: 15vw;
+  }
+
+  .left-scrab-container {
+    width: 91vw;
+    height: 91vw;
+    background-size: 91vw;
+  }
+
+  .right-scrub-container {
+    width: 91vw;
+    height: auto;
+  }
+
+  .scrub-title {
+    font-size: 8.8vw;
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 13vw;
+  }
+
+  .scrub-text {
+    font-size: 2.9vw;
+    width: 51vw;
+    margin: 0;
+    margin-left: 35vw;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+  }
+
+  .scrub-btn {
+    padding: 3.8vw 4.4vw 4.4vw 5.6vw;
   }
 }
 
