@@ -76,3 +76,12 @@ new Swiper(".yummy-swiper", {
     },
   },
 });
+
+new Swiper(".info-swiper", {
+  slidesPerView: 1.3,
+  breakpoints: {
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});

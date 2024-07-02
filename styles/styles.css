@@ -477,7 +477,6 @@ header {
 
 .bestseller-section {
   padding: 5.2vw 0 6.25vw 0;
-  padding-bottom: 21vw;
 }
 
 .bestseller-upper-menu {
@@ -1159,7 +1158,7 @@ header {
       rgba(19, 43, 41, 0.2),
       rgba(19, 43, 41, 0.2)
     ),
-    url(../images/cosmetix/home.jpg);
+    url(../images/cosmetix/mousse.jpg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1442,6 +1441,7 @@ header {
   display: flex;
   gap: 0.4vw;
   margin-bottom: 0.4vw;
+  justify-content: center;
 }
 
 .upper-large-images {
@@ -1463,6 +1463,7 @@ header {
 .instagram-bootom-image-container {
   display: flex;
   gap: 0.4vw;
+  justify-content: center;
 }
 
 .bottom-small-images {
@@ -2921,6 +2922,7 @@ footer {
 
   .bestseller-section {
     padding-top: 21.3vw;
+    padding-bottom: 21vw;
   }
 
   .bestseller-swiper-btn {
@@ -3178,6 +3180,263 @@ footer {
 
   .scrub-btn {
     padding: 3.8vw 4.4vw 4.4vw 5.6vw;
+  }
+
+  /* COSMETICS section ------------------------------------------------------- */
+
+  .cosmetix-list {
+    gap: 2vw;
+    column-gap: 2vw;
+  }
+
+  .cosmetix-item:nth-child(1) {
+    width: 100%;
+    height: 40vw;
+    background-image: linear-gradient(
+        rgba(19, 43, 41, 0.2),
+        rgba(19, 43, 41, 0.2)
+      ),
+      url(../images/cosmetix/yummy.jpg);
+    background-size: cover;
+  }
+
+  .cosmetix-item:nth-child(2) {
+    width: 49%;
+    height: 40vw;
+    background-image: linear-gradient(
+        rgba(19, 43, 41, 0.2),
+        rgba(19, 43, 41, 0.2)
+      ),
+      url(../images/cosmetix/maneater.jpg);
+    background-size: cover;
+  }
+
+  .cosmetix-item:nth-child(3) {
+    width: 48.7%;
+    height: 40vw;
+    background-image: linear-gradient(
+        rgba(19, 43, 41, 0.2),
+        rgba(19, 43, 41, 0.2)
+      ),
+      url(../images/cosmetix/blossom.jpg);
+    background-size: cover;
+  }
+
+  /* WHY- section -------------------------------------------------------------- */
+
+  .why-section {
+    background-image: url(../images/why-sect-bg/why-sect-mob-bg.jpg);
+    background-size: contain;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .why-title {
+    font-size: 8.8vw;
+    width: 56vw;
+    margin-bottom: 12vw;
+  }
+
+  .why-title .hero-title-span {
+    font-size: 8.8vw;
+  }
+
+  .why-image-blocks {
+    position: relative;
+    flex-direction: column;
+  }
+
+  .first-why-image {
+    width: 70vw;
+    height: 79vw;
+    margin-bottom: 5.3vw;
+  }
+
+  .first-why-block .why-block-text {
+    font-size: 4.2vw;
+    width: 71vw;
+    line-height: 5.8vw;
+  }
+
+  .second-why-image {
+    width: 43.4vw;
+    height: 55vw;
+    margin-bottom: 5.3vw;
+  }
+
+  .second-why-block .why-block-text {
+    width: 43vw;
+    text-indent: 0;
+    font-size: 4.2vw;
+    line-height: 5.8vw;
+  }
+
+  .second-why-block {
+    align-self: flex-end;
+    margin-top: 9vw;
+  }
+
+  .why-circle {
+    position: absolute;
+    width: 120vw;
+    height: 120vw;
+    top: 29vw;
+    left: 5vw;
+  }
+
+  .third-why-block {
+    position: static;
+    width: 40vw;
+  }
+
+  .third-why-block .second-why-image {
+    width: 43.4vw;
+    height: auto;
+  }
+
+  .third-why-block .why-block-text {
+    font-size: 4.2vw;
+    width: 50vw;
+    line-height: 5.8vw;
+  }
+
+  /* INSTAGRAM section -------------------------------------------------------- */
+
+  .instagram-upper-image-container {
+    gap: 2.1vw;
+    margin-bottom: 2vw;
+  }
+
+  .instagram-title {
+    font-size: 7.4vw;
+    line-height: 10.9vw;
+    margin-bottom: 9.6vw;
+    width: 90%;
+  }
+
+  .upper-large-images {
+    object-fit: cover;
+    width: 31.4vw;
+    height: 50.9vw;
+  }
+
+  .upper-large-container {
+  }
+
+  .upper-small-images-container {
+    justify-content: space-between;
+  }
+
+  .upper-small-images {
+    width: 24.2vw;
+    height: 24.2vw;
+  }
+
+  .bottom-small-images {
+    width: 30.7vw;
+    height: 31.2vw;
+  }
+
+  .botoom-large-image {
+    width: 56vw;
+    height: 64.8vw;
+  }
+
+  .bottom-small-images-column {
+    justify-content: space-between;
+  }
+
+  .instagram-bootom-image-container {
+    justify-content: space-between;
+  }
+
+  /* INFO section ----------------------------------------------------------- */
+
+  .section-info {
+    overflow: hidden;
+  }
+
+  .info-list {
+    gap: 8.5vw;
+  }
+
+  .info-item {
+    width: 64vw;
+  }
+
+  .info-item-icon-container {
+    width: 26.6vw;
+    height: 26.6vw;
+    margin-bottom: 4.8vw;
+  }
+
+  .info-icon {
+    width: 14.5vw;
+    height: 14.5vw;
+  }
+
+  .info-title {
+    font-size: 4.8vw;
+    width: 60vw;
+    margin-bottom: 3.2vw;
+  }
+
+  .info-text {
+    font-size: 4.2vw;
+    width: 60vw;
+    line-height: 5.8vw;
+  }
+
+  /* NEWS section --------------------------------------------------------- */
+
+  .news-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-news-container {
+    width: 91vw;
+    height: 92vw;
+  }
+
+  .news-rectangle {
+    width: 90vw;
+    height: 89vw;
+  }
+
+  .right-news-container {
+    width: 91vw;
+    height: 92vw;
+    padding: 11.7vw 9.1vw 0 9.1vw;
+  }
+
+  .news-title {
+    font-size: 6.9vw;
+    line-height: 8vw;
+    width: 70vw;
+    margin-bottom: 8.3vw;
+  }
+
+  .news-title .hero-title-span {
+    font-size: 6.9vw;
+  }
+
+  .news-form {
+    width: 100%;
+  }
+
+  .news-form-input::placeholder {
+    font-size: 4.2vw;
+  }
+
+  .right-news-container .news-form-input {
+    width: 66vw;
+    height: 10vw;
+  }
+
+  .news-form-icon {
+    width: 5.3vw;
+    height: 5.3vw;
   }
 }
 
