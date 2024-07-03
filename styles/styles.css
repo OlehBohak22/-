@@ -2748,7 +2748,7 @@ footer {
   width: 63vw;
   margin: 0 auto;
   padding: 3.1vw;
-  background-color: #e6e6e0;
+  background-color: rgba(230, 230, 224, 0.3);
 }
 
 .heading-text {
@@ -2788,6 +2788,11 @@ footer {
   background: #5d5e5e;
 }
 
+.opened {
+  width: 100%;
+  background: #e1ff42;
+}
+
 .backdrop-container:hover .backdrop-line {
   width: 57.5vw;
   background: #e1ff42;
@@ -2798,6 +2803,7 @@ footer {
   height: 0.4vw;
   transition: 0.3s;
   cursor: pointer;
+  transform: rotate(180deg);
 }
 
 .backdrop-heading-container {
@@ -2806,7 +2812,7 @@ footer {
 }
 
 .is-rotate {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 
 /* PAYMENT page ------------------------------------------------------------------------ */
@@ -3354,6 +3360,7 @@ footer {
 
   .section-info {
     overflow: hidden;
+    padding-top: 21vw;
   }
 
   .info-list {
@@ -3421,7 +3428,7 @@ footer {
     font-size: 6.9vw;
   }
 
-  .news-form {
+  .right-news-container .news-form {
     width: 100%;
   }
 
@@ -3437,6 +3444,161 @@ footer {
   .news-form-icon {
     width: 5.3vw;
     height: 5.3vw;
+  }
+
+  /* FOOTER ------------------------------------ */
+  footer {
+    overflow: hidden;
+  }
+
+  .footer-upper-line {
+    padding-top: 16vw;
+    padding-bottom: 8.5vw;
+    width: 82vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .upper-line-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 7.4vw;
+  }
+
+  .footer-insta-link {
+    margin: auto;
+    align-self: center;
+  }
+
+  .footer-logo {
+    width: 49.6vw;
+    height: 18.6vw;
+  }
+
+  .insta-link-text {
+    font-size: 6.4vw;
+  }
+
+  .footer-insta-icon-container {
+    width: 13.8vw;
+    height: 13.8vw;
+  }
+
+  .footer-insta-icon {
+    width: 5.8vw;
+    height: 5.8vw;
+  }
+
+  .footer-insta-link {
+    gap: 2.6vw;
+  }
+
+  .footer-tel-number {
+    font-size: 7.4vw;
+    margin-bottom: 3.5vw;
+  }
+
+  .footer-mail-address {
+    font-size: 5.6vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .footer-work-schedule {
+    font-size: 4.2vw;
+    margin-bottom: 8.2vw;
+  }
+
+  .left-footer-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 19.2vw;
+  }
+
+  .footer-bottom-container {
+    flex-direction: column;
+    padding-top: 8.2vw;
+  }
+
+  .footer-addres-block .insta-link-text {
+    font-size: 4.8vw;
+  }
+
+  .footer-addres-block {
+    border-bottom: 1px solid #e6e6e0;
+    padding-bottom: 8.2vw;
+  }
+
+  .footer-nav-block {
+    align-self: flex-start;
+  }
+
+  .footer-lists-title {
+    font-size: 5.3vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .footer-nav-link {
+    font-size: 4.2vw;
+  }
+
+  .footer-nav-list {
+    gap: 6.4vw;
+  }
+
+  .right-footer-container {
+    flex-direction: column;
+  }
+
+  .footer-form-describe {
+    font-size: 8.5vw;
+    margin-bottom: 6.7vw;
+    width: 59.4vw;
+  }
+
+  .footer-form .news-form-input {
+    height: 8vw;
+    width: 90vw;
+  }
+
+  .footer-form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer-form-input::placeholder {
+    font-size: 5.3vw;
+  }
+
+  .footer-form .news-form-icon {
+    width: 11vw;
+    height: 11vw;
+  }
+
+  .fppter-form-block {
+    border-bottom: 1px solid #e6e6e0;
+    padding-bottom: 10.5vw;
+  }
+
+  .footer-payment-container {
+    flex-direction: column-reverse;
+    gap: 5.3vw;
+    padding-top: 19vw;
+  }
+
+  .footer-payment-list {
+    justify-content: space-between;
+  }
+
+  .footer-payment-icon {
+    width: 12.2vw;
+    height: auto;
+  }
+
+  .steya-footer {
+    font-size: 4.2vw;
+    margin: 0 auto;
   }
 }
 
