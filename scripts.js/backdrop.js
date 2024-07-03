@@ -6,7 +6,7 @@ parent.addEventListener("click", (event) => {
     const backdropContainer = target.closest(".backdrop-container");
     const bgTitle = backdropContainer.querySelector(".backdrop-text");
     const arrowIcon = backdropContainer.querySelector(".backdrop-arrow-icon");
-    const line = document.querySelector(".backdrop-line");
+    const line = backdropContainer.querySelector(".backdrop-line");
 
     bgTitle.classList.toggle("is-active");
     arrowIcon.classList.toggle("is-rotate");

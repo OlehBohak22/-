@@ -34,13 +34,19 @@ secondSwiper.controller.control = firstSwiper;
 
 new Swiper(".swiper", {
   initialSlide: 0,
-  slidesPerView: 3,
+  slidesPerView: 2,
   spaceBetween: 0,
   navigation: {
     prevEl: ".swiper-btn-left",
     nextEl: ".swiper-btn-right",
   },
   loop: true,
+
+  breakpoints: {
+    1024: {
+      slidesPerView: 3,
+    },
+  },
 });
 
 new Swiper(".bestseller-swiper", {

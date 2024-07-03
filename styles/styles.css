@@ -45,8 +45,7 @@ body {
   font-family: "Ekaterina Velikaya One", sans-serif;
   font-weight: 400;
   font-size: 7.8vw;
-  line-height: 0px;
-  line-height: 0;
+
   letter-spacing: -0.07em;
   text-align: center;
   color: #e1ff42;
@@ -116,7 +115,7 @@ header {
   top: 0;
   color: white;
   text-align: center;
-  z-index: 1000;
+  z-index: 999999999999;
   background-color: #ffffff;
 }
 
@@ -291,9 +290,15 @@ header {
   opacity: 0.4;
 }
 
+.header-search-input {
+  border: none;
+  width: 10vw;
+  height: 2vw;
+}
+
 .header-btn-search {
   position: absolute;
-  top: 0.9vw;
+  top: 1vw;
   right: 1vw;
   border: none;
   background-color: transparent;
@@ -329,6 +334,7 @@ header {
 .btn-bag-icon {
   width: 1vw;
   height: 1vw;
+  stroke: #0c4d47;
 }
 
 /* HERO--------------------------------------------------------------------------- */
@@ -410,7 +416,6 @@ header {
 }
 
 .btn-bag-icon {
-  stroke: #132b29;
   transition: 0.3s;
 }
 
@@ -524,7 +529,7 @@ header {
 .bestseller-product-list {
   display: flex;
   gap: 0.4vw;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .bestseller-product-item {
@@ -641,7 +646,7 @@ header {
   font-weight: 600;
   font-size: 0.8vw;
   color: #302215;
-  margin-bottom: 0.4vw;
+  margin-bottom: 0.5vw;
   opacity: 0.6;
 }
 
@@ -702,10 +707,6 @@ header {
   transition: 0.3s;
   width: 0.5vw;
   height: 0.5vw;
-}
-
-.bestseller-product-item:hover .product-item-basket-button {
-  transform: translateX(0);
 }
 
 .product-item-basket-button:hover {
@@ -1185,14 +1186,6 @@ header {
   transition: 0.3s;
 }
 
-.cosmetix-item:hover .cosmetix-item-title {
-  transform: translateY(-2.5vw);
-  font-size: 2.7vw;
-  line-height: 3.9vw;
-  text-transform: uppercase;
-  color: #e1ff42;
-}
-
 .cosmetix-item-btn {
   position: absolute;
   display: flex;
@@ -1204,16 +1197,6 @@ header {
   background-color: transparent;
   opacity: 0;
   transition: 0.3s;
-}
-
-.cosmetix-item-btn:hover {
-  border-radius: 0;
-  gap: 1.5vw;
-}
-
-.cosmetix-item:hover .cosmetix-item-btn {
-  opacity: 1;
-  transform: translateY(2.5vw);
 }
 
 .item-btn-text {
@@ -2004,6 +1987,7 @@ footer {
 .product-acardeon {
   width: 100% !important;
   background-color: transparent !important;
+  padding: 0 !important;
 }
 
 .product-bag-quantity-value {
@@ -2197,6 +2181,11 @@ footer {
   width: 69vw;
 }
 
+.product-pay-buttons .header-btn-like {
+  width: 3.6vw;
+  height: 3.6vw;
+}
+
 /* CATALOG page -------------------------------------------------------- */
 
 .catalog-hero {
@@ -2204,11 +2193,13 @@ footer {
   background-repeat: no-repeat;
   background-size: 99vw 19.7vw;
   width: 99vw;
+  height: 19.7vw;
   margin: 0 auto;
 }
 
 .catalog-section {
   padding-bottom: 7.2vw;
+  padding-top: 3.8vw;
 }
 
 .catalog-title {
@@ -2218,6 +2209,7 @@ footer {
   font-size: 3.3vw;
   text-transform: uppercase;
   color: #fff;
+  padding-top: 12vw;
 }
 
 .catalog-list {
@@ -2318,12 +2310,19 @@ footer {
 .contact-address-container {
   display: flex;
   gap: 1vw;
+  margin-bottom: 3vw;
 }
 
 .contact-address-icon {
   width: 3.3vw;
   height: 3.3vw;
   fill: rgba(230, 230, 224, 0.3);
+}
+
+.contact-tel-icon {
+  width: 3.3vw;
+  height: 3.3vw;
+  stroke: rgba(230, 230, 224, 0.3);
 }
 
 .contact-address {
@@ -2337,7 +2336,7 @@ footer {
 }
 
 .contact-address-value {
-  font-family: "Raleway", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 1vw;
   line-height: 1.4vw;
@@ -2482,14 +2481,6 @@ footer {
   padding-bottom: 7.2vw;
 }
 
-.bestseller-product-list {
-  justify-content: flex-start;
-}
-
-.bestseller-product-item {
-  width: 19.7vw !important;
-}
-
 .swiper {
   width: 70vw;
 }
@@ -2593,12 +2584,18 @@ footer {
   text-transform: uppercase;
   text-align: center;
   color: #302215;
-  margin-bottom: 9.3vw;
+  margin-bottom: 4vw;
   width: 76vw;
 }
 
 .inspiration-title-span {
   color: rgba(48, 34, 21, 0.6);
+}
+
+.inspiration-icon {
+  width: 1vw;
+  height: 1vw;
+  margin-bottom: 4.1vw;
 }
 
 .inspiration-image-list {
@@ -2785,16 +2782,11 @@ footer {
   width: 1vw;
   height: 0.2vw;
   transition: 0.5s;
-  background: #5d5e5e;
+  background: #0c4d47;
 }
 
 .opened {
-  width: 100%;
-  background: #e1ff42;
-}
-
-.backdrop-container:hover .backdrop-line {
-  width: 57.5vw;
+  width: 100% !important;
   background: #e1ff42;
 }
 
@@ -2809,6 +2801,7 @@ footer {
 .backdrop-heading-container {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .is-rotate {
@@ -2870,6 +2863,74 @@ footer {
 }
 
 @media (max-width: 1024px) {
+  /* HEADER ======================================== */
+
+  .top-header {
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .down-header {
+    display: none;
+  }
+
+  .header-logo {
+    position: absolute;
+    width: 21.6vw;
+    height: 10.6vw;
+    left: 40%;
+    top: 3vw;
+  }
+
+  .header-btn-search {
+  }
+
+  .search-container {
+    overflow: visible;
+    width: auto;
+    right: 67vw;
+    top: 4vw;
+  }
+
+  .header-search-form {
+    display: none;
+  }
+
+  .btn-search-icon {
+    width: 6.4vw;
+    height: 6.4vw;
+  }
+
+  .header-btn-profile {
+    display: none;
+  }
+
+  .header-number-container {
+    display: none;
+  }
+
+  .header-btn-like,
+  .header-btn-bag {
+    background-color: transparent;
+    width: 13vw;
+    height: 13vw;
+  }
+
+  .btn-like-icon,
+  .btn-bag-icon {
+    width: 6.4vw;
+    height: 6.4vw;
+  }
+
+  .header-mob-btn {
+    width: 14.4vw;
+    height: 14.4vw;
+  }
+
+  /* .header-line {
+    margin-top: 4.2vw;
+  } */
+
   /* HERO SCTION =----------------------------------------------------------------- */
 
   .container {
@@ -2982,6 +3043,10 @@ footer {
     margin-bottom: 2.1vw;
   }
 
+  .product-rating-container {
+    margin-bottom: 1.8vw;
+  }
+
   .product-name {
     font-size: 3.7vw;
     width: fit-content;
@@ -2999,21 +3064,21 @@ footer {
     display: none;
   }
 
-  .mob-bestseller-plus {
-    position: absolute;
-    z-index: 999;
-    right: 3vw;
-    bottom: -4vw;
+  .product-item-basket-button {
+    border-radius: 100%;
     width: 11.7vw;
     height: 11.7vw;
-    border-radius: 100%;
-    background-color: #e1ff42;
-    border: none;
-    font-size: 6vw;
+    top: 39vw;
+    right: 15vw;
   }
 
-  .product-image-wrap {
-    overflow: visible;
+  .basket-text {
+    display: none;
+  }
+
+  .basket-icon {
+    width: 2.6vw;
+    height: 2.6vw;
   }
 
   /* SWIPER section ----------------------------------------------------------- */
@@ -3046,8 +3111,7 @@ footer {
   .ekaterina-font {
     font-size: 14.4vw;
     font-weight: 400;
-    line-height: 0px;
-    line-height: 0;
+
     letter-spacing: -0.07em;
     text-align: center;
     color: #e1ff42;
@@ -3204,28 +3268,88 @@ footer {
       ),
       url(../images/cosmetix/yummy.jpg);
     background-size: cover;
+    order: 1;
   }
 
   .cosmetix-item:nth-child(2) {
     width: 49%;
-    height: 40vw;
+    height: 59vw;
     background-image: linear-gradient(
         rgba(19, 43, 41, 0.2),
         rgba(19, 43, 41, 0.2)
       ),
       url(../images/cosmetix/maneater.jpg);
     background-size: cover;
+    order: 1;
   }
 
   .cosmetix-item:nth-child(3) {
-    width: 48.7%;
-    height: 40vw;
+    width: 100%;
+    height: 60vw;
     background-image: linear-gradient(
         rgba(19, 43, 41, 0.2),
         rgba(19, 43, 41, 0.2)
       ),
       url(../images/cosmetix/blossom.jpg);
     background-size: cover;
+    order: 5;
+  }
+
+  .cosmetix-item:nth-child(4) {
+    width: 48.7%;
+    height: 59vw;
+    background-size: cover;
+    order: 4;
+  }
+
+  .cosmetix-item:nth-child(5) {
+    order: 6;
+    width: 49%;
+    height: 59vw;
+    background-size: cover;
+  }
+
+  .cosmetix-item:nth-child(6) {
+    order: 7;
+    width: 48%;
+    height: 59vw;
+    background-size: cover;
+  }
+
+  .cosmetix-item:nth-child(7) {
+    width: 100%;
+    height: 40vw;
+    background-size: cover;
+    order: 8;
+  }
+
+  .cosmetix-item {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4.2vw;
+    gap: 5.3vw;
+  }
+
+  .cosmetix-item-title {
+    font-size: 6.4vw;
+    color: #e1ff42;
+    line-height: 7.4vw;
+  }
+
+  .cosmetix-item-btn {
+    position: static;
+    opacity: 1;
+    border-radius: 100%;
+    width: 11.7vw;
+    height: 11.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item-btn-text {
+    display: none;
   }
 
   /* WHY- section -------------------------------------------------------------- */
@@ -3600,6 +3724,400 @@ footer {
     font-size: 4.2vw;
     margin: 0 auto;
   }
+
+  /* -------------------------ABOUT US PAGE--------------------------------------- */
+  /* ABOUT HERO SECTION------------------------------------ */
+  .abot-hero-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.1vw;
+  }
+
+  .about-hero-title-container {
+    width: 92vw;
+    height: 158vw;
+    background-image: url(../images/about/about-hero-mob-bg.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .about-hero-title {
+    font-size: 5.3vw;
+    line-height: 7.4vw;
+    width: 80vw;
+    padding-top: 10.6vw;
+  }
+
+  .about-hero-image-container {
+    width: 92vw;
+    height: 92vw;
+  }
+
+  /* INSPIRSTION section */
+
+  .section-inspiration {
+    padding-top: 16vw;
+  }
+
+  .inspiration-top-text {
+    font-size: 3.7vw;
+    line-height: 5.3vw;
+    width: 70vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .inspiration-title {
+    font-size: 6.9vw;
+    line-height: 9.6vw;
+    width: 85vw;
+    margin-bottom: 9.6vw;
+  }
+
+  .inspiration-image-list {
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .ispiration-images {
+    width: 92vw;
+    height: auto;
+  }
+
+  .inspiration-icon {
+    width: 4.9vw;
+    height: 4.9vw;
+    margin-bottom: 9.6vw;
+  }
+
+  .inspiration-bottom-text {
+    font-size: ;
+  }
+
+  /* CREATE section ---------------------------------------------- */
+
+  .create-section {
+    padding-bottom: 16vw;
+  }
+
+  .top-create-container {
+    flex-direction: column;
+  }
+
+  .create-images {
+    width: 92vw;
+    height: auto;
+  }
+
+  .top-create-title {
+    font-size: 5.3vw;
+    line-height: 7.4vw;
+    text-align: end;
+    width: 67vw;
+    top: 53%;
+  }
+
+  .top-create-title-container {
+    width: 92vw;
+    height: 88vw;
+  }
+
+  .top-create-text {
+    position: absolute;
+    font-size: 3.7vw;
+    line-height: 5.3vw;
+    width: 45vw;
+    top: 51vw;
+    right: 3vw;
+    color: #fff;
+
+    opacity: 0.6;
+  }
+
+  .bottom-create-container {
+    flex-direction: column;
+    gap: 2vw;
+  }
+
+  .botoom-create-text-container {
+    width: 92vw;
+    height: 88vw;
+  }
+
+  .bottom-create-text {
+    font-size: 5.3vw;
+    line-height: 7.4vw;
+    width: 59vw;
+  }
+
+  /* CATALOG PAGE ---------------------------------------------- */
+  /* CATALOG HERO section------------------------------------------- */
+  .filter-btn {
+    font-size: 3.7vw;
+    padding: 4.3vw 11.6vw;
+  }
+
+  .catalog-list .bestseller-product-item {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  .catalog-list {
+    row-gap: 4.5vw;
+  }
+
+  .catalog-title {
+    font-size: 7vw;
+    padding-top: 32vw;
+  }
+
+  .catalog-hero {
+    width: 92vw;
+    height: 48.2vw;
+    background-size: cover;
+    background-position: -64vw 0vw;
+  }
+
+  .catalog-section {
+    padding-top: 6.4vw;
+  }
+
+  .filter-container {
+    margin-bottom: 6.4vw;
+  }
+
+  /* FAQ PAGE ===================================================== */
+
+  .faq-hero-section {
+    width: 92vw;
+    height: 48vw;
+    background-size: cover;
+    background-position: -100vw 0;
+    padding-top: 30vw;
+    padding-left: 5vw;
+  }
+
+  .faq-hero-title {
+    font-size: 7.4vw;
+  }
+
+  .faq-container {
+    width: 92vw;
+    gap: 15vw;
+    padding: 18vw 4.2vw 8.5vw 4.4vw;
+  }
+
+  .heading-text {
+    font-size: 5.3vw;
+    margin-bottom: 6.4vw;
+    width: -webkit-fill-available;
+  }
+
+  .backdrop-text {
+    font-size: 4.2vw;
+  }
+
+  .backdrop-arrow-icon {
+    width: 5.3vw;
+    height: 5.3vw;
+  }
+
+  .backdrop-line {
+    width: 3.2vw;
+    height: 0.8vw;
+  }
+
+  /* PAyment PAge ---------------------------------------- */
+
+  .payment-hero-section {
+    width: 92vw;
+    height: 48vw;
+    background-size: cover;
+    background-position: -80vw;
+    padding-top: 30vw;
+    padding-left: 5vw;
+  }
+
+  .payment-layout-container {
+    flex-direction: column;
+  }
+
+  .payment-headings {
+    font-size: 6.9vw;
+    line-height: 8vw;
+    margin-bottom: 6.4vw;
+  }
+
+  .payment-text {
+    font-size: 4.2vw;
+    line-height: 5.8vw;
+    width: 80vw;
+  }
+
+  .payment-container {
+    /* gap: 4.2vw; */
+  }
+
+  .delivery-section {
+    padding-top: 16vw;
+  }
+
+  /* BESTSELLERS _AGE =========================================== */
+
+  .bestsellers-hero-section {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 2vw;
+    /* height: 150vw; */
+  }
+
+  .bestsellers-hero-title-block {
+    width: 91vw;
+    height: 100vw;
+    background-image: url(../images/bestsellers/bestsellers-hero-mob.jpg);
+    background-size: 91vw 42vw;
+    background-position: bottom;
+  }
+
+  .bestsellers-hero-title {
+    font-size: 6.9vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .bestsellesrs-title-number {
+    font-size: 3.2vw;
+    margin-left: 2vw;
+  }
+
+  .bestseller-text {
+    font-size: 3.7vw;
+    line-height: 5.6vw;
+    width: 72vw;
+  }
+
+  .bestsellers-hero-image-block {
+    width: 91vw;
+    height: 92vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../images/bestsellers/bestsellers-mob-hero-girl.jpg);
+  }
+
+  /* NOVYNKI  PAGE --------------------------------------- */
+
+  .bestseller-catalog-container {
+    flex-direction: column;
+  }
+
+  .swiper {
+    width: 92vw;
+  }
+
+  .bestseller-title-text {
+    font-size: 7.4vw;
+    line-height: 8.8vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .bestseller-title-text-number {
+    font-size: 4.2vw;
+  }
+
+  .novynki-hero-title-block {
+    background-image: url(../images/novynki/novunky-hero-mob.jpg);
+  }
+
+  .novynki-hero-image-block {
+    background-image: url(../images/novynki/novunky-hero-mob2.jpg);
+  }
+
+  /* PRODUCT PAGE ================================================ */
+
+  /* CONTACT PAGE ================================================ */
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .contact-title {
+    font-size: 6.9vw;
+  }
+
+  .contact-bg-block {
+    width: 92vw;
+    height: 92vw;
+    background-image: url(../images/mob-contact-bg.jpg);
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-bg-rectangle {
+    display: none;
+  }
+
+  .contact-info-container {
+    width: 92vw;
+    height: auto;
+    padding: 8.5vw;
+  }
+
+  .contact-email {
+    font-size: 4.8vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .contact-email-icon {
+    width: 6.4vw;
+    height: 6.4vw;
+  }
+
+  .contact-address {
+    font-size: 3.7vw;
+    margin-bottom: 2vw;
+    line-height: 5.8vw;
+  }
+
+  .info-container {
+    width: auto;
+  }
+
+  .contact-address-value {
+    font-size: 4.8vw;
+    line-height: 6.6vw;
+    width: 60vw;
+  }
+
+  .contact-address-container {
+    margin-bottom: 8.5vw;
+    gap: 4.2vw;
+  }
+
+  .contact-address-icon,
+  .contact-tel-icon {
+    width: 11.7vw;
+    height: 11.7vw;
+  }
+
+  .contact-social-link {
+    width: 26.6vw;
+    height: 26.6vw;
+  }
+
+  .contact-socil-link-icon {
+    width: 9.3vw;
+    height: 9.3vw;
+  }
+
+  .contact-social-links-container {
+    gap: 6.4vw;
+  }
+
+  .contact-info-line {
+    margin-bottom: 10.6vw;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -3618,5 +4136,36 @@ footer {
 
   .bestseller-product-item:hover .besteseller-item-product-image {
     transform: scale(1.2);
+  }
+
+  .cosmetix-item-btn:hover {
+    border-radius: 0;
+    gap: 1.5vw;
+  }
+
+  .cosmetix-item:hover .cosmetix-item-btn {
+    opacity: 1;
+    transform: translateY(2.5vw);
+  }
+
+  .cosmetix-item:hover .cosmetix-item-title {
+    transform: translateY(-2.5vw);
+    font-size: 2.7vw;
+    line-height: 3.9vw;
+    text-transform: uppercase;
+    color: #e1ff42;
+  }
+
+  .bestseller-product-item:hover .product-item-basket-button {
+    transform: translateX(0);
+  }
+
+  .bestseller-product-item {
+    width: 19.7vw !important;
+  }
+
+  .backdrop-container:hover .backdrop-line {
+    width: 57.5vw;
+    background: #e1ff42;
   }
 }
