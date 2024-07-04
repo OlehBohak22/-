@@ -1371,7 +1371,7 @@ header {
   /* align-items: baseline; */
 }
 
-.swiper-slide-active {
+.recomendation-swiper-container .swiper-slide-active {
   width: 40vw !important;
   transition: 0.3s;
 }
