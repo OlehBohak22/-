@@ -1404,7 +1404,7 @@ header {
 }
 
 .recomendation-swiper-container .swiper-slide {
-  width: max-content !important;
+  /* width: max-content !important; */
 }
 
 .rcmd-swiper-icon {
