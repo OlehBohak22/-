@@ -3039,9 +3039,9 @@ footer {
     margin-bottom: 5.6vw;
   }
 
-  .bestseller-swiper .bestseller-product-item {
+  /* .bestseller-swiper .bestseller-product-item {
     width: 43.7vw !important;
-  }
+  } */
 
   .bestseller-swiper {
     width: 99.5%;
@@ -3487,7 +3487,7 @@ footer {
   }
 
   .botoom-large-image {
-    width: 56vw;
+    width: 57.2vw;
     height: 64.8vw;
   }
 
