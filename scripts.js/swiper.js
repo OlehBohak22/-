@@ -91,3 +91,13 @@ new Swiper(".info-swiper", {
     },
   },
 });
+
+new Swiper(".recomendation-swiper-container", {
+  slidesPerView: 3,
+  spaceBetween: 8,
+  loop: true,
+  navigation: {
+    prevEl: ".rcmn-swiper-prev",
+    nextEl: ".rcmn-swiper-next",
+  },
+});

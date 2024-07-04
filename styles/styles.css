@@ -1308,6 +1308,7 @@ header {
 .recomendation-section {
   padding-bottom: 4.1vw;
   padding-top: 7vw;
+  height: 60vw;
 }
 
 .recomendation-title-container {
@@ -1336,65 +1337,125 @@ header {
   opacity: 0.4;
 }
 
-.recomendation-swiper-list {
-  display: flex;
-  gap: 0.4vw;
-  align-items: flex-start;
-}
-
-.main-recomendation-image {
-  width: 40vw;
-  height: 22.4vw;
-  margin-bottom: 2vw;
-}
-
-.main-item-recomendation-title {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 2.5vw;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: #302215;
-  width: 40vw;
-  margin-bottom: 1vw;
-}
-
-.recomendation-item-title-span {
-  font-style: italic;
-}
-
-.secondaries-recomendation-items {
-  display: flex;
-  gap: 0.4vw;
-  margin-top: 4.4vw;
-}
-
-.main-item-recomendation-text {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 0.9vw;
-  line-height: 1.3vw;
-  letter-spacing: -0.02em;
-  color: #302215;
-  opacity: 0.7;
-  width: 35vw;
-}
-
-.secondary-recomendation-image {
-  width: 24.4vw;
-  height: 18vw;
-  margin-bottom: 2vw;
-}
-
-.secondary-item-title {
+.rcmnd-swiper-title {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 1.6vw;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #302215;
-  width: 23vw;
-  margin-bottom: 5.4vw;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+  width: 24vw;
+}
+
+.rcmnd-swiper-text {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 0.9vw;
+  line-height: 1.3vw;
+  letter-spacing: -0.02em;
+  color: #302215;
+  display: none;
+  transition: 0.3s;
+  width: 37vw;
+}
+
+.recomendation-swiper-container {
+  overflow: hidden;
+  position: relative;
+  height: 40vw;
+}
+
+.recomendation-swiper-container .swiper-wrapper {
+  /* align-items: baseline; */
+}
+
+.swiper-slide-active {
+  width: 40vw !important;
+  transition: 0.3s;
+}
+
+.swiper-slide-active .rcmnd-swiper-title {
+  font-size: 2.5vw;
+  transition: 0.3s;
+  width: 40vw;
+}
+
+.swiper-slide-active .rcmnd-swiper-text {
+  display: block;
+}
+
+.rcmnd-swiper-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide .rcmnd-swiper-img-conyainer {
+  width: 24.4vw;
+  height: 18.4vw;
+  overflow: hidden;
+}
+
+.swiper-slide-active .rcmnd-swiper-img-conyainer {
+  width: 40vw;
+  height: 22.4vw;
+}
+
+.recomendation-swiper-container .swiper-slide {
+  width: max-content !important;
+}
+
+.rcmd-swiper-icon {
+  width: 0.9vw;
+  height: 0.7vw;
+  stroke: #132b29;
+  transition: 0.3s;
+}
+
+.rcmn-swiper-prev {
+  border: none;
+  background-color: transparent;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.1vw;
+  height: 3.1vw;
+  transition: 0.3s;
+}
+
+.rcmn-swiper-next {
+  border: none;
+  background-color: transparent;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.1vw;
+  height: 3.1vw;
+  transition: 0.3s;
+}
+
+.rcmn-swiper-prev:hover,
+.rcmn-swiper-next:hover {
+  background-color: #132b29;
+  border-radius: 0;
+}
+
+.rcmn-swiper-prev:hover .rcmd-swiper-icon,
+.rcmn-swiper-next:hover .rcmd-swiper-icon {
+  stroke: #ffffff;
+}
+
+.rcmnd-swiper-btns {
+  position: absolute;
+  bottom: 6vw;
+  right: 4.5vw;
+  display: flex;
+  gap: 1.6vw;
+  z-index: 999;
 }
 
 /* INASTAGRAM section --------------------------------------------------------------------- */
@@ -3221,6 +3282,7 @@ footer {
   .yammy-title {
     font-size: 7.4vw;
     margin-right: 2.6vw;
+    line-height: 8.8vw;
   }
 
   .yammy-title-number {
@@ -3272,6 +3334,9 @@ footer {
   }
 
   /* COSMETICS section ------------------------------------------------------- */
+  .cosmetix-section {
+    padding-top: 21vw;
+  }
 
   .cosmetix-list {
     gap: 2vw;
