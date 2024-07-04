@@ -36,10 +36,10 @@ body {
   background-color: #ffffff;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Ekaterina Velikaya One";
   src: url("../ekaterinavelikayaone.ttf");
-}
+} */
 
 .ekaterina-font {
   font-family: "Ekaterina Velikaya One", sans-serif;
@@ -1918,6 +1918,7 @@ footer {
   gap: 3vw;
   border: 1px solid #e6e6e0;
   width: max-content;
+  padding: 0.3vw;
 }
 
 .product-plus-minus-container {
@@ -1931,13 +1932,12 @@ footer {
   background-color: #e1ff42;
 }
 
-.product-bag-plus-minus-icons {
-  width: 0.7vw;
-  height: 0.7vw;
-  transition: 0.3s;
-}
-.product-plus-minus-container:hover .product-bag-plus-minus-icons {
-  transform: scale(1.2);
+.product-plus-minus-container {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1vw;
+  color: #0c4d47;
+  line-height: 1vw;
 }
 
 .product-pay-buttons {
@@ -1995,7 +1995,15 @@ footer {
   font-weight: 600;
   font-size: 1vw;
   color: #302215;
+  height: 2vw;
+  width: 1vw;
+  border: none;
 }
+
+/* .product-bag-quantity-valueS::placeholder {
+  color: #000;
+  opacity: 1;
+} */
 
 .product-additional-info-container {
   display: flex;
@@ -2058,7 +2066,7 @@ footer {
 }
 
 .product-question-button:hover {
-  gap: 1vw;
+  /* gap: 1vw; */
 }
 
 .question-icon {
@@ -2184,6 +2192,14 @@ footer {
 .product-pay-buttons .header-btn-like {
   width: 3.6vw;
   height: 3.6vw;
+}
+
+.product-pay-buttons .default-btn {
+  padding: 1.146vw 2.458vw 1.25vw 1.875vw;
+}
+
+.product-pay-buttons .default-btn:hover {
+  gap: 0.6vw;
 }
 
 /* CATALOG page -------------------------------------------------------- */
@@ -2868,6 +2884,8 @@ footer {
   .top-header {
     align-items: center;
     margin-bottom: 0;
+    padding-bottom: 4.2vw;
+    padding-top: 4.2vw;
   }
 
   .down-header {
@@ -2879,7 +2897,7 @@ footer {
     width: 21.6vw;
     height: 10.6vw;
     left: 40%;
-    top: 3vw;
+    top: 7vw;
   }
 
   .header-btn-search {
@@ -2889,7 +2907,7 @@ footer {
     overflow: visible;
     width: auto;
     right: 67vw;
-    top: 4vw;
+    top: 8vw;
   }
 
   .header-search-form {
@@ -2934,7 +2952,7 @@ footer {
   /* HERO SCTION =----------------------------------------------------------------- */
 
   .container {
-    width: 90vw;
+    width: 92vw;
   }
 
   .hero-container {
