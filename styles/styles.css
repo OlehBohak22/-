@@ -42,6 +42,7 @@ body {
 } */
 
 .ekaterina-font {
+  position: absolute;
   font-family: "Ekaterina Velikaya One", sans-serif;
   font-weight: 400;
   font-size: 7.8vw;
