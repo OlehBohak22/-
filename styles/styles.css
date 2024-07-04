@@ -1357,7 +1357,7 @@ header {
   letter-spacing: -0.02em;
   color: #302215;
   display: none;
-  transition: 0.3s;
+  transition: 0.5s;
   width: 37vw;
 }
 
@@ -1373,12 +1373,12 @@ header {
 
 .recomendation-swiper-container .swiper-slide-active {
   width: 40vw !important;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .swiper-slide-active .rcmnd-swiper-title {
   font-size: 2.5vw;
-  transition: 0.3s;
+  transition: 0.5s;
   width: 40vw;
 }
 
@@ -1411,7 +1411,7 @@ header {
   width: 0.9vw;
   height: 0.7vw;
   stroke: #132b29;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .rcmn-swiper-prev {
@@ -1423,7 +1423,7 @@ header {
   align-items: center;
   width: 3.1vw;
   height: 3.1vw;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .rcmn-swiper-next {
@@ -1435,7 +1435,7 @@ header {
   align-items: center;
   width: 3.1vw;
   height: 3.1vw;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .rcmn-swiper-prev:hover,
@@ -2281,6 +2281,7 @@ footer {
 }
 
 .catalog-title {
+  position: relative;
   font-family: "Raleway", sans-serif;
   font-style: italic;
   font-weight: 600;
@@ -2288,6 +2289,9 @@ footer {
   text-transform: uppercase;
   color: #fff;
   padding-top: 12vw;
+}
+
+.catalog-ekat {
 }
 
 .catalog-list {
@@ -3061,8 +3065,8 @@ footer {
   }
 
   .default-btn-icon {
-    width: 6.4vw;
-    height: 6.4vw;
+    width: 4.4vw;
+    height: 4.4vw;
   }
 
   /* BESTSELLERS SECTION  ------------------------------------------------------- */
@@ -4116,6 +4120,237 @@ footer {
 
   /* PRODUCT PAGE ================================================ */
 
+  .product-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-info-container {
+    width: auto;
+  }
+
+  .product-name-in-page {
+    font-size: 7vw;
+  }
+
+  .product-volume {
+    font-size: 3.7vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .cuurent-product-price {
+    font-size: 6.4vw;
+  }
+
+  .old-product-price {
+    font-size: 6.4vw;
+  }
+
+  .product-price-container {
+    gap: 5.3vw;
+    margin-bottom: 2vw;
+    margin-left: 6.4vw;
+  }
+
+  .product-discount {
+    font-size: 3.2vw;
+    margin-bottom: 8.5vw;
+    margin-left: 6.4vw;
+  }
+
+  .product-bag-buttons-container {
+    display: none;
+  }
+
+  .product-pay-buttons .default-btn {
+    gap: 2vw;
+    padding: 4.8vw 7.4vw 4.8vw 8.5vw;
+  }
+
+  .product-pay-buttons .default-btn-text {
+    font-size: 4.8vw;
+  }
+
+  .product-pay-buttons {
+    margin-bottom: 14vw;
+    height: 26.6vw;
+    border-top: 1px solid #e6e6e0;
+
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+  }
+
+  .product-pay-buttons .header-btn-like {
+    width: 16vw;
+    height: 16vw;
+    background-color: #e1ff42;
+  }
+
+  .product-code-container {
+    display: none;
+  }
+
+  .product-info-desc {
+    font-size: 3.7vw;
+    line-height: 5.8vw;
+    margin-bottom: 17vw;
+  }
+
+  .product-type-rating-container {
+    display: none;
+  }
+
+  .first {
+    margin-bottom: 13vw;
+  }
+
+  .product-additional-info-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 9vw;
+    margin-bottom: 10.6vw;
+  }
+
+  .product-star-icon {
+    width: 6.4vw;
+    height: 6.4vw;
+  }
+
+  .additional-info-title {
+    font-size: 4.8vw;
+  }
+
+  .additional-info-text {
+    font-size: 3.7vw;
+    line-height: 5.8vw;
+    width: 56vw;
+  }
+
+  .additional-info-title-container {
+    align-items: center;
+    gap: 3.7vw;
+    margin-bottom: 4.2vw;
+  }
+
+  .product-line {
+    margin-top: 8.5vw;
+    margin-bottom: 8.5vw;
+  }
+
+  .question-container {
+    flex-direction: column;
+    gap: 4vw;
+  }
+
+  .question-button-text {
+    font-size: 4.8vw;
+  }
+
+  .product-question-button {
+    width: 100%;
+    height: 18vw;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .question-icon {
+    width: 6.6vw;
+    height: 6.6vw;
+  }
+
+  .question-container-text {
+    font-size: 3.7vw;
+  }
+
+  .response-title-container {
+    flex-direction: column;
+    margin-bottom: 17vw;
+  }
+
+  .response-title {
+    font-size: 7vw;
+    line-height: 8.8vw;
+    gap: 2.6vw;
+    margin-bottom: 2.3vw;
+  }
+
+  .response-number {
+    font-size: 4.2vw;
+  }
+
+  .response-title-block .rating-icon {
+    width: 42.6vw;
+    height: 8.5vw;
+  }
+
+  .response-title-block {
+    margin-bottom: 8.8vw;
+  }
+
+  .response-button {
+    font-size: 4.8vw;
+    width: 62vw;
+    height: 17vw;
+    border: 0.8vw solid #132b29;
+  }
+
+  .response-item {
+    flex-direction: column;
+    width: 64vw !important;
+    height: 87vw;
+    padding: 4.2vw 5.3vw 4.2vw 5.3vw;
+  }
+
+  .response-author-name {
+    font-size: 4.8vw;
+  }
+
+  .response-rating-icon {
+    width: 26.6vw;
+    height: 5.3vw;
+    margin-bottom: 3.2vw;
+  }
+
+  .response-image-item {
+    width: 16vw;
+    height: 16vw;
+  }
+
+  .response-img-container {
+    margin-bottom: 3.2vw;
+  }
+
+  .response-item-text {
+    font-size: 3.2vw;
+    line-height: 4.5vw;
+    width: 53vw;
+  }
+
+  .response-date {
+    font-size: 3.2vw;
+  }
+
+  .all-response-container {
+  }
+
+  .all-response-link {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 3.7vw;
+    color: #0c4d47;
+    padding: 2.1vw 4.2vw;
+  }
+
+  .response-swiper-container {
+    margin-bottom: 5.3vw;
+    overflow: hidden;
+  }
+
+  .section-main-product-info {
+    padding-bottom: 14vw;
+  }
+
   /* CONTACT PAGE ================================================ */
 
   .contact-container {
@@ -4251,5 +4486,13 @@ footer {
   .backdrop-container:hover .backdrop-line {
     width: 57.5vw;
     background: #e1ff42;
+  }
+
+  .response-list {
+    flex-direction: column !important;
+  }
+
+  .response-item {
+    width: 100% !important;
   }
 }

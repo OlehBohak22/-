@@ -100,4 +100,20 @@ new Swiper(".recomendation-swiper-container", {
     prevEl: ".rcmn-swiper-prev",
     nextEl: ".rcmn-swiper-next",
   },
+
+  speed: 300,
+
+  // autoplay: {
+  //   delay: 5000,
+  // },
+});
+
+new Swiper(".response-swiper-container", {
+  slidesPerView: 1.5,
+  spaceBetween: 12,
+  breakpoints: {
+    1024: {
+      allowTouchMove: false,
+    },
+  },
 });
