@@ -36,17 +36,18 @@ body {
   background-color: #ffffff;
 }
 
-/* @font-face {
-  font-family: "Ekaterina Velikaya One";
-  src: url("../ekaterinavelikayaone.ttf");
-} */
+@font-face {
+  font-family: "One";
+  src: url("../EkaterinaVelikayaOne.woff");
+}
 
 .ekaterina-font {
   position: absolute;
-  font-family: "Ekaterina Velikaya One", sans-serif;
+  font-family: "One";
   font-weight: 400;
   font-size: 7.8vw;
   pointer-events: none;
+  /* text-transform: lowercase; */
 
   letter-spacing: -0.07em;
   text-align: center;
@@ -3209,7 +3210,7 @@ footer {
     margin-top: 13vw;
     margin-bottom: 10.6vw;
     font-size: 6.9vw;
-    width: 64vw;
+    width: 60vw;
     line-height: 8vw;
   }
 
@@ -4528,4 +4529,16 @@ footer {
 .letter-H-in-swiper-section {
   top: 29vw;
   left: 18vw;
+}
+
+@media (max-width: 1024px) {
+  .letter-C-in-swiper-section {
+    top: 22vw;
+    left: 10vw;
+  }
+
+  .letter-H-in-swiper-section {
+    top: 51vw;
+    left: 30vw;
+  }
 }
