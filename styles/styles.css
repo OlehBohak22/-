@@ -851,7 +851,7 @@ header {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  width: 35vw;
+  width: 39vw;
   margin-top: 10vw;
 }
 
@@ -863,7 +863,7 @@ header {
 
 .swiper-text-btn {
   margin: 0 auto;
-  margin-top: 2.3vw;
+  margin-top: 5.3vw;
 }
 
 .hero-btn {
@@ -1307,8 +1307,8 @@ header {
 
 .recomendation-section {
   padding-bottom: 4.1vw;
-  padding-top: 7vw;
-  height: 60vw;
+  /* padding-top: 7vw; */
+  height: 45vw;
 }
 
 .recomendation-title-container {
@@ -4496,4 +4496,16 @@ footer {
   .response-item {
     width: 100% !important;
   }
+}
+
+/* EKATERINA POSITIONS========================================== */
+
+.letter-C-in-swiper-section {
+  top: 17vw;
+  left: 4vw;
+}
+
+.letter-H-in-swiper-section {
+  top: 29vw;
+  left: 18vw;
 }
