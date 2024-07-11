@@ -479,7 +479,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  border: 0.11vw solid #000;
+  border: 0.1vw solid #000;
   border-radius: 100%;
   transition: 0.3s;
 }
@@ -1382,12 +1382,44 @@ header {
   width: 37vw;
 }
 
-.recomendation-swiper-container {
-  overflow: hidden;
-  position: relative;
-  height: 40vw;
+.swiper-slide-active .rcmnd-swiper-text {
+  display: block;
 }
 
+.rcmnd-swiper-img-conyainer {
+  width: 24.4vw;
+  height: 18.4vw;
+}
+
+.rcmnd-swiper-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide-active .rcmnd-swiper-img-conyainer {
+  /* width: 40vw;
+  height: 22.4vw;
+  object-fit: cover; */
+}
+
+.recomendation-swiper-container .swiper-slide-active {
+  transform: scale(1.4) !important;
+  /* z-index: 2; */
+  margin: 0 2.8vw 0 1.8vw !important;
+}
+
+.recomendation-swiper-container .swiper-slide {
+  transition: 1s;
+  flex-shrink: 1;
+}
+
+.recomendation-swiper-container {
+  /* overflow: hidden; */
+  /* position: relative;
+  height: 40vw; */
+}
+/*  
 .recomendation-swiper-container .swiper-wrapper {
   align-items: baseline;
   margin-left: 6.5vw;
@@ -1478,7 +1510,7 @@ header {
   display: flex;
   gap: 1.6vw;
   z-index: 999;
-}
+} */
 
 /* INASTAGRAM section --------------------------------------------------------------------- */
 
@@ -1899,28 +1931,6 @@ footer {
   justify-content: space-between;
 }
 
-.product-images {
-  display: flex;
-  gap: 0.83vw;
-  height: max-content;
-}
-
-.product-small-images-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.product-small-images {
-  width: 6.2vw;
-  height: 6.2vw;
-}
-
-.product-large-image {
-  width: 38.3vw;
-  height: 41.6vw;
-}
-
 .rating-icon {
   width: 6.2vw;
   height: 1.2vw;
@@ -2276,6 +2286,19 @@ footer {
 .product-pay-buttons .header-btn-like {
   width: 3.6vw;
   height: 3.6vw;
+  background-color: #e1ff42;
+}
+
+.product-pay-buttons .header-btn-like::before {
+  display: none;
+}
+
+.product-pay-buttons .header-btn-like:hover {
+  background-color: #0c4d47;
+}
+
+.product-pay-buttons .header-btn-like:hover .btn-like-icon {
+  fill: #e1ff42;
 }
 
 .product-pay-buttons .default-btn {
@@ -2284,6 +2307,39 @@ footer {
 
 .product-pay-buttons .default-btn:hover {
   gap: 0.6vw;
+}
+
+.small-swiper-wrapper .swiper-slide {
+  width: 6.2vw;
+  height: 6.2vw !important;
+}
+
+.small-swiper-wrapper .swiper-slide-active {
+  border: 2px solid #0c4d47;
+}
+
+.small-swiper-wrapper {
+  justify-content: space-between;
+}
+
+.small-images-swiper {
+  height: 41.6vw;
+}
+
+.large-swiper-wrapper .swiper-slide {
+  width: 38.3vw;
+  height: 41.6vw;
+}
+
+.large-images-swiper {
+  overflow: hidden;
+  width: 38.3vw;
+  height: 41.6vw;
+}
+
+.product-images {
+  display: flex;
+  gap: 0.8vw;
 }
 
 /* CATALOG page -------------------------------------------------------- */
@@ -3597,9 +3653,9 @@ footer {
     padding-top: 21vw;
   }
 
-  .info-list {
+  /* .info-list {
     gap: 8.5vw;
-  }
+  } */
 
   .info-item {
     width: 64vw;

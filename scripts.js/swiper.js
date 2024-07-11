@@ -109,34 +109,24 @@ new Swiper(".recomendation-swiper-container", {
 });
 
 new Swiper(".response-swiper-container", {
-  // slidesPerView: 1.5,
-  // spaceBetween: 12,
-  // breakpoints: {
-  //   1024: {
-  //     allowTouchMove: false,
-  //   },
-  // },
-  slidesPerView: 3,
-  centeredSlides: true,
-  slideToClickedSlide: true,
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  on: {
-    slideChangeTransitionStart: function () {
-      const slides = document.querySelectorAll(".swiper-slide");
-      slides.forEach((slide) => {
-        slide.style.transform = "scale(0.85)";
-      });
-      slides[this.activeIndex].style.transform = "scale(1.0)";
+  slidesPerView: 1.5,
+  spaceBetween: 12,
+  breakpoints: {
+    1024: {
+      allowTouchMove: false,
     },
   },
 });
 
-// const swiper = new Swiper(".swiper-container", {});
+const smallProductSwiper = new Swiper(".small-images-swiper", {
+  slidesPerView: 6,
+  direction: "vertical",
+  // spaceBetween: 16,
+});
+
+const largeProductSwiper = new Swiper(".large-images-swiper", {
+  slidesPerView: 1,
+});
+
+smallProductSwiper.controller.control = largeProductSwiper;
+largeProductSwiper.controller.control = smallProductSwiper;
